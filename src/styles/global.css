@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  @apply bg-gray-900;
+  @apply text-slate-100;
+  padding: 2rem;
+}
+
+@media (max-width: 700px) {
+  .imagem2 {
+    display: none;
+  }
+
+  .contact-form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0;
+  }
+}
